@@ -1,0 +1,21 @@
+{
+  "name": "personal-finance-tracker-root",
+  "version": "1.0.0",
+  "description": "Full-Stack Personal Finance Tracker with Charts and JWT Auth",
+  "private": true,
+  "scripts": {
+    "server": "npm --prefix server run dev",
+    "client": "npm --prefix client run dev",
+    "dev": "concurrently \"npm --prefix server run dev\" \"npm --prefix client run dev\"",
+    "start": "node server/server.js",
+    "build:client": "npm --prefix client run build",
+    "build": "npm --prefix client run build",
+    "test:server": "npm --prefix server test",
+    "test:client": "npm --prefix client test",
+    "test": "npm --prefix server test && npm --prefix client test"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  }
+}
+
